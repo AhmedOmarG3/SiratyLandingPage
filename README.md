@@ -43,30 +43,5 @@ landing_page/
 └── README.md
 ```
 
----
-
-## 🚀 تشغيل الموقع محلياً
-يمكنك فتح ملف `index.html` مباشرة في أي متصفح، أو تشغيل خادم محلي:
-
-```bash
-# باستخدام بايثون
-python -m http.server 8080
-
-# أو باستخدام Node.js
-npx serve .
-```
-
----
-
-## 🌐 النشر عبر GitHub Pages
-لتفعيل الموقع مجاناً عبر GitHub Pages:
-1. اذهب إلى إعدادات المستودع **Settings** في GitHub.
-2. اختر **Pages** من القائمة الجانبية.
-3. تحت **Branch**، اختر `main` واضغط **Save**.
-4. سيصبح موقعك متاحاً خلال ثوانٍ على الرابط:
-   `https://ahmedomarg3.github.io/SiratyLandingPage/`
-
----
-
-## 📱 رابط التطبيق على متجر Google Play
+---ى متجر Google Play
 [https://play.google.com/store/apps/details?id=com.ahmed.siraty](https://play.google.com/store/apps/details?id=com.ahmed.siraty)
