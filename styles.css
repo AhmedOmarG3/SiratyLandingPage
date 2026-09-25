@@ -511,7 +511,7 @@ body {
   padding: 3.5px;
   background: linear-gradient(60deg, #B88A2B, #123C34, #E2BE6C, #1A5449, #B88A2B);
   background-size: 300% 300%;
-  animation: bannerBorderShimmer 8s ease infinite, floatBanner 6s ease-in-out infinite alternate;
+  animation: bannerBorderShimmer 5s ease infinite, floatBanner 4s ease-in-out infinite;
   box-shadow: 
     0 25px 55px rgba(10, 36, 31, 0.2),
     0 0 30px rgba(184, 138, 43, 0.16);
@@ -526,8 +526,9 @@ body {
 }
 
 @keyframes floatBanner {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-12px); }
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(-1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
 }
 
 .banner-curved-frame:hover {
@@ -638,6 +639,22 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  animation: iconBreathe 3.5s ease-in-out infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:nth-child(even) .feature-icon-box {
+  animation-delay: 1.2s;
+}
+
+.feature-card:nth-child(3n) .feature-icon-box {
+  animation-delay: 2.2s;
+}
+
+@keyframes iconBreathe {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.08); }
+  100% { transform: translateY(0) scale(1); }
 }
 
 .feature-icon-box svg {
@@ -823,8 +840,26 @@ body {
   overflow: hidden;
 }
 
+.screens-duo-wrapper .screen-card:first-child {
+  animation: phoneFloatA 5s ease-in-out infinite alternate;
+}
+
+.screens-duo-wrapper .screen-card:last-child {
+  animation: phoneFloatB 5s ease-in-out infinite alternate 1.8s;
+}
+
+@keyframes phoneFloatA {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-14px) rotate(-1.2deg); }
+}
+
+@keyframes phoneFloatB {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-14px) rotate(1.2deg); }
+}
+
 .screen-card:hover {
-  transform: translateY(-8px) scale(1.025);
+  transform: translateY(-16px) scale(1.04) !important;
   box-shadow: 0 25px 45px rgba(10, 36, 31, 0.22), 0 0 25px rgba(184, 138, 43, 0.25);
 }
 
@@ -1421,19 +1456,29 @@ body {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 230, 150, 0.35) 50%,
+    rgba(255, 230, 150, 0.45) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   transform: rotate(25deg);
   pointer-events: none;
-  animation: sweepShine 4.5s infinite ease-in-out;
+  animation: sweepShine 3s infinite ease-in-out;
 }
 
 @keyframes sweepShine {
   0% { left: -60%; opacity: 0; }
-  15% { opacity: 1; }
-  35% { left: 140%; opacity: 0; }
+  20% { opacity: 1; }
+  45% { left: 140%; opacity: 0; }
   100% { left: 140%; opacity: 0; }
+}
+
+.btn-pulse {
+  animation: btnPulseGlow 2.2s infinite ease-in-out;
+}
+
+@keyframes btnPulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(18, 60, 52, 0.4); }
+  70% { box-shadow: 0 0 0 12px rgba(18, 60, 52, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(18, 60, 52, 0); }
 }
 
 /* 2. Scroll Reveal Animations */
@@ -1467,20 +1512,21 @@ body {
 .particle {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(184, 138, 43, 0.6) 0%, rgba(18, 60, 52, 0) 70%);
-  animation: particleFloat 14s infinite ease-in-out alternate;
+  background: radial-gradient(circle, rgba(184, 138, 43, 0.75) 0%, rgba(18, 60, 52, 0.1) 70%);
+  filter: blur(1px);
+  animation: particleFloat 7s infinite ease-in-out alternate;
 }
 
-.p-1 { width: 14px; height: 14px; top: 20%; left: 12%; animation-duration: 16s; }
-.p-2 { width: 10px; height: 10px; top: 55%; right: 8%; animation-duration: 20s; animation-delay: 2s; }
-.p-3 { width: 18px; height: 18px; bottom: 25%; left: 22%; animation-duration: 18s; animation-delay: 4s; }
-.p-4 { width: 12px; height: 12px; top: 75%; right: 28%; animation-duration: 22s; animation-delay: 1s; }
-.p-5 { width: 8px; height: 8px; top: 15%; right: 20%; animation-duration: 15s; animation-delay: 3s; }
+.p-1 { width: 16px; height: 16px; top: 18%; left: 10%; animation-duration: 6s; }
+.p-2 { width: 12px; height: 12px; top: 50%; right: 8%; animation-duration: 7.5s; animation-delay: 1.5s; }
+.p-3 { width: 20px; height: 20px; bottom: 22%; left: 20%; animation-duration: 6.8s; animation-delay: 3s; }
+.p-4 { width: 14px; height: 14px; top: 72%; right: 26%; animation-duration: 8s; animation-delay: 1s; }
+.p-5 { width: 10px; height: 10px; top: 14%; right: 19%; animation-duration: 5.5s; animation-delay: 2s; }
 
 @keyframes particleFloat {
-  0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.3; }
-  50% { transform: translateY(-35px) translateX(20px) scale(1.25); opacity: 0.75; }
-  100% { transform: translateY(15px) translateX(-15px) scale(0.9); opacity: 0.35; }
+  0% { transform: translateY(0) translateX(0) scale(0.9); opacity: 0.4; }
+  50% { transform: translateY(-35px) translateX(25px) scale(1.3); opacity: 0.9; }
+  100% { transform: translateY(20px) translateX(-20px) scale(0.95); opacity: 0.45; }
 }
 
 /* 4. Animated Equalizer Wave on Recitations Card */

@@ -162,6 +162,14 @@ ${storeUrl}`;
 
   // 1. Scroll Reveal with IntersectionObserver
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  
+  // Immediately reveal top hero elements without requiring scroll
+  setTimeout(() => {
+    document.querySelectorAll('.hero-content, .hero-visual').forEach(el => {
+      el.classList.add('is-revealed');
+    });
+  }, 60);
+
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -171,8 +179,8 @@ ${storeUrl}`;
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -30px 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -20px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
