@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق سيرتي | رفيقك الإسلامي اليومي</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="سيرتي - تطبيقك الإسلامي الشامل للقرآن الكريم بالرسم العثماني، مواقيت الصلاة، الأذكار، التجويد، والسبحة الذكية. بدون أي إعلانات نهائياً وبدون إنترنت. متوفر الآن على Google Play.">
+  <meta name="keywords" content="سيرتي, تطبيق قرآن, مواقيت الصلاة, أذكار الصباح والمساء, اتجاه القبلة, التجويد, سبحة إلكترونية, بدون إعلانات">
+  <meta name="author" content="سيرتي - Siraty">
+  <link rel="icon" type="image/png" href="assets/app_logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="تطبيق سيرتي | رفيقك الإسلامي اليومي">
+  <meta property="og:description" content="المصحف الشريف، مواقيت الصلاة، الأذكار، والتجويد بدون أي إعلانات. حمّله الآن مجاناً من متجر Google Play.">
+  <meta property="og:image" content="assets/banner_mockup.png">
+  <meta property="og:url" content="https://play.google.com/store/apps/details?id=com.ahmed.siraty">
+
+  <!-- Google Fonts: Cairo & Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Luxury Glows & Floating Spiritual Particles -->
+  <div class="ambient-glow glow-emerald"></div>
+  <div class="ambient-glow glow-gold"></div>
+  <div class="ambient-glow glow-teal"></div>
+  <div class="floating-particles">
+    <div class="particle p-1"></div>
+    <div class="particle p-2"></div>
+    <div class="particle p-3"></div>
+    <div class="particle p-4"></div>
+    <div class="particle p-5"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="assets/app_logo.png" alt="شعار تطبيق سيرتي" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-title">سيرتي</span>
+          <span class="brand-tagline">رفيقك الإسلامي اليومي</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#features" class="nav-link">المميزات</a>
+        <a href="#screens" class="nav-link">واجهات التطبيق</a>
+        <a href="#share-section" class="nav-link">انشر تؤجر</a>
+        <a href="#qrcode-section" class="nav-link">تحميل سريع (QR)</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" id="navShareBtn">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <span>مشاركة</span>
+        </button>
+        <a href="https://play.google.com/store/apps/details?id=com.ahmed.siraty" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-pulse">
+          <svg class="icon play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.926V2.74c0-.342.115-.658.61-.926zm11.238 11.24L17.5 15.71l-11.83 6.83 9.177-9.486zm2.653-2.654L21.4 12.35a1.18 1.18 0 0 1 0 1.98l-3.9 1.95-2.05-2.05 2.05-2.05v-.01zM5.67 1.46l11.83 6.83-2.653 2.654-9.177-9.484z"/></svg>
+          <span>تحميل التطبيق</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>تحديث 1.0.5 الجديد متاح الآن على متجر Google Play</span>
+          </div>
+
+          <h1 class="hero-title">
+            رفيقك الهادئ في يومك، <br>
+            <span class="text-gradient-gold">لقلبٍ يطمئن بذكر الله</span>
+          </h1>
+
+          <p class="hero-description">
+            تطبيق إسلامي شامل يجمع لك القرآن الكريم بالرسم العثماني، مواقيت الصلاة الدقيقة مع الأذان، أذكار الصباح والمساء، بوصلة القبلة، والتجويد الميسر.. بتصميم عصري فخم ومريح للعين، <strong>وبدون أي إعلانات مزعجة إطلاقاً</strong>.
+          </p>
+
+          <div class="hero-features-chips">
+            <span class="chip">🛡️ بدون إعلانات نهائياً</span>
+            <span class="chip">📶 يعمل بدون إنترنت (أوفلاين)</span>
+            <span class="chip">🎧 تلاوات كبار القراء</span>
+            <span class="chip">⭐ تجويد ميسر للمبتدئين</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="https://play.google.com/store/apps/details?id=com.ahmed.siraty" target="_blank" rel="noopener noreferrer" class="btn btn-store-large">
+              <svg class="google-play-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.926V2.74c0-.342.115-.658.61-.926zm11.238 11.24L17.5 15.71l-11.83 6.83 9.177-9.486zm2.653-2.654L21.4 12.35a1.18 1.18 0 0 1 0 1.98l-3.9 1.95-2.05-2.05 2.05-2.05v-.01zM5.67 1.46l11.83 6.83-2.653 2.654-9.177-9.484z"/>
+              </svg>
+              <div class="btn-store-text">
+                <span class="btn-store-sub">متاح مجاناً على</span>
+                <span class="btn-store-main">Google Play</span>
+              </div>
+            </a>
+
+            <button class="btn btn-secondary btn-large" id="heroShareBtn">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+              <span>مشاركة التطبيق</span>
+            </button>
+
+            <a href="#qrcode-section" class="btn btn-ghost btn-large">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <span>رمز QR</span>
+            </a>
+          </div>
+
+          <!-- REFINED STATS / SELLING POINTS (NOT TRIVIAL NUMBERS) -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-highlight">صفر إعلانات</span>
+              <span class="stat-label">خالص لوجه الله لخشوع تام</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-highlight">100% أوفلاين</span>
+              <span class="stat-label">قراءة وذكر واستماع بدون نت</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-highlight">شامل ومجاني</span>
+              <span class="stat-label">تلاوة، أذان، أذكار، وتجويد</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEAMLESS HERO VISUAL (CURVED LUXURY FRAME, NO SHARP CORNERS) -->
+        <div class="hero-visual reveal-on-scroll delay-2">
+          <div class="banner-seamless-container">
+            <div class="banner-soft-glow"></div>
+            <div class="banner-curved-frame" id="heroBannerFrame">
+              <img src="assets/banner_mockup.png" alt="واجهات تطبيق سيرتي" class="banner-floating-img">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY FEATURES SECTION -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">مميزات لا غنى عنها</span>
+          <h2 class="section-title">كل ما يحتاجه المسلم في تطبيقٍ واحد</h2>
+          <p class="section-subtitle">حرصنا على جمع أهم العبادات والأذكار في واجهة انسيابية صُممت لتمنحك الهدوء والسكينة أثناء الاستخدام.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Quran -->
+          <div class="feature-card reveal-on-scroll delay-1">
+            <div class="feature-icon-box gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="feature-title">المصحف الشريف بالرسم العثماني</h3>
+            <p class="feature-desc">تصفح وقراءة مطابقة لمصحف المدينة المنورة بـ 604 صفحات، مع التفسير الميسر لكل آية وحفظ موضع آخر قراءة تلقائياً.</p>
+            <ul class="feature-bullets">
+              <li>تقليب سلس وتجربة قراءة مريحة</li>
+              <li>تفسير الآيات وتحديد الأجزاء والأحزاب</li>
+              <li>البحث الفوري الذكي بالآيات والسور</li>
+            </ul>
+          </div>
+
+          <!-- Feature 2: Audio & Reciters -->
+          <div class="feature-card reveal-on-scroll delay-2">
+            <div class="feature-icon-box green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="feature-title">
+              تلاوات كبار القراء وإدارة التحميل
+              <span class="equalizer-wave" title="تلاوات صوتية">
+                <span class="equalizer-bar"></span>
+                <span class="equalizer-bar"></span>
+                <span class="equalizer-bar"></span>
+                <span class="equalizer-bar"></span>
+                <span class="equalizer-bar"></span>
+              </span>
+            </h3>
+            <p class="feature-desc">استمع لآيات الذكر الحكيم بأصوات نخبة من كبار القراء، مع إمكانية تحميل سور كاملة أو آيات محددة للاستماع أوفلاين، والتحكم التام في مساحة التخزين عبر حذف سورة أو آية أو مسح جميع المحملات بضغطة زر من الإعدادات.</p>
+            <ul class="feature-bullets">
+              <li>تحميل سور كاملة أو آيات منفردة للاستماع بدون نت</li>
+              <li>إدارة الذاكرة: حذف سورة أو آية أو مسح الكل من الإعدادات</li>
+              <li>مشغل صوت مخصص في الخلفية وشاشة القفل</li>
+            </ul>
+          </div>
+
+          <!-- Feature 3: Prayer Times & Adhan -->
+          <div class="feature-card reveal-on-scroll delay-3">
+            <div class="feature-icon-box gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="feature-title">مواقيت الصلاة الدقيقة والأذان</h3>
+            <p class="feature-desc">حساب دقيق لمواقيت الصلوات الخمس وفق موقعك الجغرافي، مع تنبيهات الأذان بصوت الحرم المكي والحرم المدني والعديد من المؤذنين.</p>
+            <ul class="feature-bullets">
+              <li>تنبيهات الأذان والمنبهات في وقتها الدقيق</li>
+              <li>العد التنازلي للصلوات القادمة</li>
+              <li>يعمل أوفلاين بعد ضبط مدينتك</li>
+            </ul>
+          </div>
+
+          <!-- Feature 4: Qibla Compass -->
+          <div class="feature-card reveal-on-scroll delay-4">
+            <div class="feature-icon-box green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <h3 class="feature-title">بوصلة دقيقة لاتجاه القبلة</h3>
+            <p class="feature-desc">حدد اتجاه الكعبة المشرفة في أي مكان حول العالم بدقة وسهولة عبر بوصلة تفاعلية متطورة تعتمد على حساسات الهاتف.</p>
+            <ul class="feature-bullets">
+              <li>توجيه دقيق ومباشر نحو القبلة</li>
+              <li>تصميم إسلامي أنيق وسهل الفهم</li>
+              <li>لا يتطلب اتصال إنترنت مستمر</li>
+            </ul>
+          </div>
+
+          <!-- Feature 5: Azkar & Hisn Al Muslim -->
+          <div class="feature-card reveal-on-scroll delay-1">
+            <div class="feature-icon-box gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="feature-title">أذكار المسلم وحصن المسلم</h3>
+            <p class="feature-desc">أذكار الصباح والمساء، أذكار النوم والاستيقاظ، وأدعية مختارة لكل أوقات اليوم مع عداد تكرار ذكي واهتزاز تفاعلي.</p>
+            <ul class="feature-bullets">
+              <li>عداد تفاعلي لحساب مرات الذكر</li>
+              <li>أذكار موثقة وصحيحة من السنة</li>
+              <li>مشاركة الذكر والحديث بضغطة زر</li>
+            </ul>
+          </div>
+
+          <!-- Feature 6: Electronic Tasbeeh -->
+          <div class="feature-card reveal-on-scroll delay-2">
+            <div class="feature-icon-box green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/></svg>
+            </div>
+            <h3 class="feature-title">السبحة الإلكترونية التفاعلية</h3>
+            <p class="feature-desc">سبحة ذكية بتصميم فريد مع خرزات متحركة واهتزاز عند كل تسبيحة، مع إحصائيات للدورات والأذكار المنجزة.</p>
+            
+            <!-- Interactive Mini Tasbeeh Demo -->
+            <div class="interactive-tasbeeh-preview">
+              <span class="tasbeeh-mini-label">جرّب التسبيح الآن:</span>
+              <button class="tasbeeh-interactive-btn" id="tasbeehInteractiveBtn" type="button">
+                <span id="tasbeehText">سُبْحَانَ اللَّهِ</span>
+                <span class="tasbeeh-counter-badge" id="tasbeehCounter">0</span>
+              </button>
+            </div>
+
+            <ul class="feature-bullets">
+              <li>اهتزاز عند كل تسبيحة وإتمام الدورة</li>
+              <li>تحديد أدعية وتسبيحات مخصصة</li>
+              <li>حفظ عدد التسبيحات التراكمية</li>
+            </ul>
+          </div>
+
+          <!-- Feature 7: Tajweed & Video Series -->
+          <div class="feature-card feature-highlight reveal-on-scroll delay-3">
+            <div class="feature-icon-box gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <div class="feature-badge">جديد التحديث ⭐</div>
+            <h3 class="feature-title">أحكام التجويد ودورات مرئية ميسرة</h3>
+            <p class="feature-desc">دليل شامل لأحكام التجويد النظرية والعملية مع سلاسل ودورات مرئية لكبار العلماء وسلسلة خاصة للمبتدئين في دقيقتين فقط.</p>
+            <ul class="feature-bullets">
+              <li>سلسلة "تعلم التجويد في دقيقتين" للمبتدئين</li>
+              <li>شرح كتاب التجويد المصور لد. أيمن سويد</li>
+              <li>أمثلة عملية مباشرة من آيات القرآن الكريم</li>
+            </ul>
+          </div>
+
+          <!-- Feature 8: No Ads Policy -->
+          <div class="feature-card feature-highlight reveal-on-scroll delay-4">
+            <div class="feature-icon-box green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="feature-badge">لوجه الله تعالى</div>
+            <h3 class="feature-title">خالٍ تماماً من الإعلانات المزعجة</h3>
+            <p class="feature-desc">صُمم تطبيق سيرتي ليكون واحة للخشوع والعبادة؛ لذلك نضمن لك تجربة نظيفة 100% بدون أي إعلانات منبثقة أو مقاطعة لتلاوتك وذكرك.</p>
+            <ul class="feature-bullets">
+              <li>صفر إعلانات تجارية في جميع أرجاء التطبيق</li>
+              <li>احترام كامل لخصوصية المستخدمين</li>
+              <li>تصميم هادئ يدعم الوضع الليلي والنهاري</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS SHOWCASE SECTION (SEAMLESS INTEGRATION) -->
+    <section class="screens-section" id="screens">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">واجهات وتصميم استثنائي</span>
+          <h2 class="section-title">تجربة بصرية مريحة وممتعة للعين</h2>
+          <p class="section-subtitle">ألقِ نظرة على صفحات التطبيق المختلفة، المصممة بأعلى معايير الإتقان والألوان الإسلامية الهادئة.</p>
+        </div>
+
+        <!-- Panoramic Showcase with Animated Shimmer Border -->
+        <div class="showcase-banner-wrapper reveal-on-scroll">
+          <div class="banner-gradient-mask">
+            <img src="assets/screens_showcase.png" alt="استعراض شاشات تطبيق سيرتي" class="showcase-banner-img">
+          </div>
+        </div>
+
+        <!-- Duo Screens: Close together, tight and cohesive -->
+        <div class="screens-duo-wrapper">
+          <div class="screen-card reveal-on-scroll delay-1">
+            <div class="screen-card-inner">
+              <img src="assets/screen_home.png" alt="الشاشة الرئيسية للتطبيق" class="screen-img">
+              <div class="screen-overlay">
+                <span class="screen-title">الرئيسية ومواقيت الصلاة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-card reveal-on-scroll delay-2">
+            <div class="screen-card-inner">
+              <img src="assets/screen_splash.png" alt="شاشة البداية والهوية" class="screen-img">
+              <div class="screen-overlay">
+                <span class="screen-title">واجهة سيرتي الراقية</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARE AND REWARD SECTION (انشر تؤجر) -->
+    <section class="share-section" id="share-section">
+      <div class="container">
+        <div class="share-card reveal-on-scroll">
+          <div class="share-content">
+            <span class="share-badge">قال ﷺ: «الدالّ على الخيرِ كفاعلِه»</span>
+            <h2 class="share-title">شارك التطبيق واكسب الأجر والصدقة الجارية</h2>
+            <p class="share-desc">
+              كل حرف يقرأه مستخدم للقرآن، وكل ذكر يتلوه، وكل صلاة يؤديها في وقتها بسبب مشاركتك للتطبيق يكتب الله لك مثله بإذن الله. شارك رابط التطبيق مع أهلك وأصدقائك الآن.
+            </p>
+
+            <div class="share-box">
+              <div class="share-text-preview" id="shareTextPreview">
+🌸 *تطبيق سيرتي - رفيقك الإسلامي اليومي* 🌸
+تطبيق إسلامي شامل ومميز بدون أي إعلانات نهائياً:
+📖 القرآن الكريم بالرسم العثماني والتفسير وحفظ موضع القراءة
+🕌 مواقيت الصلاة الدقيقة وتنبيهات الأذان
+🎧 تلاوات كبار القراء مع تحميل سور وآيات وإدارة الذاكرة وحذفها من الإعدادات
+📿 أذكار الصباح والمساء، وحصن المسلم، وسبحة ذكية
+🧭 اتجاه القبلة الدقيق
+🎥 أحكام التجويد ودورات مرئية ميسرة للمبتدئين
+
+📱 حمله مجاناً من متجر Google Play:
+https://play.google.com/store/apps/details?id=com.ahmed.siraty
+              </div>
+
+              <div class="share-actions-row">
+                <button class="btn btn-primary" id="copyShareBtn">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span id="copyBtnText">نسخ النص والرابط</span>
+                </button>
+
+                <button class="btn btn-secondary" id="triggerNativeShare">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  <span>مشاركة مباشرة</span>
+                </button>
+              </div>
+
+              <!-- Quick Social Share Links -->
+              <div class="social-share-buttons">
+                <a href="#" class="social-btn whatsapp" id="shareWhatsapp" target="_blank" rel="noopener">
+                  واتساب
+                </a>
+                <a href="#" class="social-btn telegram" id="shareTelegram" target="_blank" rel="noopener">
+                  تيليجرام
+                </a>
+                <a href="#" class="social-btn facebook" id="shareFacebook" target="_blank" rel="noopener">
+                  فيسبوك
+                </a>
+                <a href="#" class="social-btn twitter" id="shareTwitter" target="_blank" rel="noopener">
+                  منصة X (تويتر)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QR CODE SECTION -->
+    <section class="qrcode-section" id="qrcode-section">
+      <div class="container qr-container">
+        <div class="qr-text-side reveal-on-scroll delay-1">
+          <span class="section-tag">تحميل سريع وفوري</span>
+          <h2 class="section-title">امسح الكود بكاميرا هاتفك وحمّل التطبيق</h2>
+          <p class="section-subtitle">
+            إذا كنت تتصفح من الحاسوب أو التابلت، افتح كاميرا هاتفك المحمول ووجهها نحو الرمز المقابل لفتح صفحة التطبيق في متجر Google Play فوراً وبدء التثبيت.
+          </p>
+          <div class="qr-steps">
+            <div class="qr-step">
+              <span class="step-num">1</span>
+              <span>افتح كاميرا الهاتف المحمول أو قارئ الـ QR</span>
+            </div>
+            <div class="qr-step">
+              <span class="step-num">2</span>
+              <span>وجّه الكاميرا نحو المربع التالي</span>
+            </div>
+            <div class="qr-step">
+              <span class="step-num">3</span>
+              <span>اضغط على الرابط الظاهر لتحميل تطبيق سيرتي</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-card-side reveal-on-scroll delay-2">
+          <div class="qr-card">
+            <div class="qr-card-header">
+              <img src="assets/app_logo.png" alt="سيرتي" class="qr-logo-small">
+              <div>
+                <strong>تطبيق سيرتي</strong>
+                <p>Google Play Store • مجاني</p>
+              </div>
+            </div>
+
+            <div class="qr-image-wrapper">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ahmed.siraty&color=061713&bgcolor=FFFFFF&margin=1" alt="QR Code لتطبيق سيرتي" class="qr-code-img" id="qrImage">
+            </div>
+
+            <p class="qr-hint">اضغط بالأسفل لنسخ الرابط المباشر للمتجر</p>
+            <button class="btn btn-store-copy btn-block" id="copyStoreLinkBtn">
+              نسخ رابط المتجر فقط
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="assets/app_logo.png" alt="سيرتي" class="footer-logo">
+        <div>
+          <h3>سيرتي | Siraty</h3>
+          <p>رفيقك اليومي للقرآن والذكر والصلاة - صدقة جارية خالصة لوجه الله تعالى وبدون أي إعلانات.</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://play.google.com/store/apps/details?id=com.ahmed.siraty" target="_blank" rel="noopener noreferrer">متجر Google Play</a>
+        <a href="#features">المميزات</a>
+        <a href="#share-section">مشاركة الأجر</a>
+        <a href="#hero">أعلى الصفحة</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 جميع الحقوق محفوظة لتطبيق سيرتي. تقبل الله منا ومنكم صالح الأعمال.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastMessage">تم نسخ الرابط والنص بنجاح! 📋</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
