@@ -1,0 +1,31 @@
+{
+  "name": "siraty-landing-page",
+  "version": "1.0.0",
+  "description": "الموقع التعريفي الرسمي وصفحة الهبوط التسويقية لتطبيق **سيرتي (Siraty)** للأندرويد.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedOmarG3/SiratyLandingPage.git"
+  },
+  "keywords": [
+    "siraty",
+    "landing-page",
+    "islamic-app",
+    "quran",
+    "prayer-times"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmedOmarG3/SiratyLandingPage/issues"
+  },
+  "homepage": "https://github.com/AhmedOmarG3/SiratyLandingPage#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
